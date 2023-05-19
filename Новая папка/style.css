@@ -1,0 +1,398 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+body {
+    display: block;
+    max-width: 100%;
+}
+/* 1 блок */
+.header {
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 15%;
+    padding-left: 40%;
+    color: white;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    padding-top: 3%;
+    white-space: nowrap;
+}
+.solid {
+    color: white;
+    text-decoration: none;
+    position: relative;
+    padding-left: 3%;
+}
+.solid::after {
+    content: '';
+    width: 100%;
+    height: 1px;
+    display: block;
+    background-color: white;
+    color: white;
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    transition: transform 0.3s ease;
+    transform: scaleX(0);
+    transform-origin: left center;
+}
+.solid:hover::after {
+    transform: scaleX(1);
+}
+.solid:hover{
+    text-decoration: none;
+    color: white;
+}
+.main {
+    background-color: black;
+    height: 830px;
+    color: white;
+}
+.main__text_s{
+    font-size: 48px;
+    color: white;
+    text-decoration: none;
+}
+.main__text_s:hover {
+    text-decoration: none;
+    color: white;
+}
+.main, .catalog, .blok6 {          
+    font-weight: 900;
+} 
+.main, .catalog, .hictory, .blok4, .blok5, .blok6, .blok7, .blok8, .blok9, .blok10, .blok11, .blok12, .blok13, .blok14 {   
+    display: flex; 
+    position: relative;
+    margin-right: auto;
+    margin-left: auto;
+    justify-content: space-around;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 24px;
+} 
+
+.main__imgbooks{
+    margin-top: 5%;
+}
+/* 2 экран */
+.catalog {
+    background-color: #d9dad9;
+    height: 252px;
+    color: black;
+}
+.main_size{
+    font-size: 100px;
+}
+.main_size, .catalog_size{
+    display: flex;
+    font-weight: 900;
+}
+.main_size, .catalog_size, .hictory_size, .blok4-1, .blok6-1, .blok7-1, .blok8-1, .blok9-1, .blok10-1, .blok12-1, .blok11-1, .blok13-1, .blok14-1{
+    position: relative;
+    width: 65%;
+    font-family: 'Ubuntu', sans-serif;
+}
+.text {
+    font-size: 16px;
+}
+.catalog_size{
+    font-size: 24px;
+    justify-content: space-between;
+    padding-top: 3%;
+    padding-bottom: 4%;
+}
+.blok4-2, .blok7-2, .blok8-1, .blok10-1-1, .blok10-2-1, .blok13-1-1 {
+    display: flex;
+    font-size: 16px;
+    justify-content: space-between;
+    padding-top: 3%;
+}
+.catalog__publication, .catalog__print, .catalog__publication_online, .catalog__button, .blok4-1-1, .blok4-1-2, .blok4-1-3, .blok4-1-4 {
+    margin: auto 0;
+    text-align: center;
+    margin: 0;
+}
+.blok7-1-1{
+    margin: auto 0;
+    text-align: left;
+    margin: 0;
+}
+.catalog__button{
+    font-size: 30px;
+    border: 5px solid #ff8be0;
+    background-color: white;
+    color: black;
+    text-align: center;
+    padding: 10px 80px 10px;
+}
+.catalog__button:hover {
+    border: 5px solid white;
+    background-color: #ff8be0;
+    transform: scaleX(1);
+}
+
+/* 3 экран */
+.blok10-2-4, .textblok10-2, .hictory_size, .blok4-1, .blok6-1, .blok7-1, .blok9-1, .blok12-1, .blok10-1, .blok11-1, .blok13-1 {
+    text-align: center;
+}
+.zag1, .zag2 {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 900;
+    font-size: 40px;
+    padding-top: 6%;
+    padding-bottom: 2%;
+}
+.historytext {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 16px;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+/* 4 экран, 5 экран */
+
+/* СЛАЙДЕРЫ */
+.slider, .slider2 {    
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: auto;
+  }
+  .sliderimg, .sliderimg2  {
+    display: none;
+    width: 100%;
+    height: auto;
+  }
+  .arr, .arr2 {
+    margin: auto 0;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    background-color: rgb(255, 255, 255);
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: background-color 0.5s ease;
+  }
+  .arr:hover, .arr2:hover {
+    background-color: rgba(255,255,255,0.7);
+  }
+  .arr.prev, .arr2.prev, .arr3.prev3 {
+    left: 0;
+  }
+  .arr.next, .arr2.next, .arr3.next3 {
+    right: 0;
+  }
+  /* 6 экран */
+  .blok6-1-1{
+    display: flex;
+    background-color: #d9dad9;
+    height: 400px;
+    padding: 40px 120px 40px 100px;
+  
+    justify-content: space-between;
+    line-height: 50px;
+  }
+  .blok6-1-2{
+    display: flex;
+
+  }
+  .advtext {
+    text-align: left;
+    font-size: 24px;
+    padding-left: 30px;
+    align-items: end;
+
+  }
+  .adv2 {
+    position: absolute;
+    right: 43%;
+    margin: 70px -90px 0;
+  }
+
+  .t{
+    padding-top: 22px;
+  }
+
+
+
+
+.slider3 {
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+}
+  
+.sliderimg3 {
+    display: none;
+    width: 100%;
+    height: auto;
+}
+  
+.arr3 {
+    position: absolute;
+    margin: auto 0; 
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+    background-color: #d9dad9;
+    border: none;
+    outline: none;
+    transition: background-color 0.5s ease;
+}
+    
+
+.textpech {
+    font-size: 18px;
+    text-align: left;
+    margin-left: 20%;
+}
+.buttonpech, .buttonorder{
+    background-color: #fb020e;
+    color: white;
+    width: 260px;
+    height: 50px;
+    font-size: 24px;
+}
+.buttonpech{
+    margin-right: 15%;
+}
+.buttonpech:hover, .buttonorder:hover {
+    background-color: #790006;
+}
+.blok10-2-1 {
+    background-color: #d9dad9;
+    width: 100%;
+    margin-top: 3%;
+    padding-top: 3%;
+    padding-left: 5%;
+    padding-bottom: 3%;
+    padding-right: 5%;
+    text-align: left;
+    color: #4d4c4c;
+    font-size: 18px;
+    font-weight: 700;
+}
+.blok10-2-4, .textblok10-2 {
+    text-align: center;
+    font-size: 18px;
+}
+.inp {
+    font-size: 24px;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    width: 260px;
+    height: 50px;
+    padding-left: 7%;
+}
+.blok10-2-4{
+    font-size: 36px;
+}
+.blok10-2-4 > p {
+    margin-bottom: 8%;
+}
+
+.textblok11{
+    font-size: 16px;
+    font-weight: 600;
+}
+.blok11-1-1 {
+    margin-top: 30px;
+}
+
+.blok11-1-1>.row>.col {
+    text-align: center;
+}
+
+.books4 {
+    margin-top: 4%;
+    margin-bottom: 3%;
+}
+
+.blok13-1-1{
+    font-weight: 600;
+}
+.blok13-1-2 {
+    text-align: left;
+    font-size: 36px;
+}
+.blok13-1-3 {
+    width: 555px;
+    height: 450px;
+    background-color: #d2afb1;
+}
+.messenger {
+    display: flex;
+    justify-content: left;
+    margin-top: 4%;
+
+    align-items: center;
+}
+.messenger > a {
+    padding-left: 7%;
+    margin-top: 3%;
+    text-decoration: none;
+    color: black;
+}
+.messenger > a:hover {
+    text-decoration: none;
+    color: #fb020e;
+}
+.addresstext, .modetext {
+    margin-bottom: 6%;    
+    margin: 0;
+}
+.address:hover, .time:hover {
+    text-decoration: none;
+    color: black;
+}
+.address, .messenger {
+    font-size: 30px;
+    text-decoration: none;
+    color: black;
+    margin: 0;
+}
+.time {
+    font-size: 24px;
+    text-decoration: none;
+    color: black;
+    margin: 0;
+}
+.redtext {
+    font-size: 24px;
+    color: #fb020e;
+    text-decoration: none;
+}
+.redtext:hover{
+    text-decoration: none;
+    color: #fb020e;
+}
+/* Подвал */
+.blok14-1 {
+    margin-top: 3%;
+    margin-bottom: 2%;
+    background-color: black;
+    height: 115px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 30px;
+    color: white;
+    align-items: center;
+
+}
+.copirate {
+    font-size: 18px;
+    margin-left: 10%;
+}
+.number {
+    margin-right: 10%;
+}
